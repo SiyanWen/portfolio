@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import MyTabs from './components/MyTabs.js';
+import { Fragment } from "react";
+import ScrollButton from "./components/ScrollButton";
+import {  Heading } from "./components/Styles";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Fragment >
+     <Heading>🚀🚀🚀Open to Work🚀🚀🚀</Heading>
+    <div className="App" style={{ padding:"0px 20px 0px 20px" }}>
+    
+    <MyTabs />
+    
     </div>
+    <ScrollButton />
+    </Fragment>
   );
 }
 
