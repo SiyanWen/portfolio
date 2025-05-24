@@ -1,14 +1,8 @@
+import withTabBackground from './withTabBackground.js';
 
 function Tab_1() {
   return (
-    <div  style={{  width: "100vw",
-    minHeight: "100vh",
-    backgroundImage: "url('background.jpg')",
-    backgroundColor: "rgba(255,255,255,0.8)",
-    backgroundBlendMode: "lighten",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed"}}>
+    <div  >
 
      
       <img
@@ -44,4 +38,4 @@ function Tab_1() {
   );
 }
 
-export default Tab_1;
+export default withTabBackground(Tab_1,  'background.jpg');

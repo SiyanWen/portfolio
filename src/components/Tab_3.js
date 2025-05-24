@@ -1,14 +1,9 @@
+import withTabBackground from './withTabBackground.js';
+
 function Tab_3() {
   return (
 
-    <div  style={{  width: "100vw",
-    minHeight: "100vh",
-    backgroundImage: "url('background.jpg')",
-    backgroundColor: "rgba(255,255,255,0.8)",
-    backgroundBlendMode: "lighten",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed"}}>
+    <div  >
        
         <ol style={{ margin: 0, padding: 0, listStylePosition: "inside" }}>
             <div style={{ padding: "20px" }}>
@@ -223,4 +218,4 @@ function Tab_3() {
   );
 }
 
-export default Tab_3;
+export default withTabBackground(Tab_3,  'background.jpg');

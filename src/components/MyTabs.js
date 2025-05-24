@@ -23,6 +23,7 @@ const MyTabs = () => (
         children: <Tab_3  />,
       },
     ]}
+    
   />
 );
 export default MyTabs;

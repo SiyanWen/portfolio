@@ -1,7 +1,4 @@
-.App {
-  /* text-align: center; */
-  
-}
+
 
 table, th, td {
 				border: 1px solid black;
@@ -40,4 +37,8 @@ table, th, td {
   to {
     transform: rotate(360deg);
   }
+}
+
+.bold {
+  font-weight: bold;
 }
