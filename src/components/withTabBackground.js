@@ -15,6 +15,8 @@ const withTabBackground = (Component, backgroundImage = 'background.jpg') => {
         minHeight: '100vh',
         boxSizing: 'border-box',
         overflowX: 'hidden',
+        font: "italic  bold 16px/2 cursive",
+        color: "rgba(52,0,108,1)",
       }}
     >
       <Component />

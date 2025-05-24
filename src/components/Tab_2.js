@@ -5,6 +5,7 @@ import Latex from './Latex.js';
 function Tab_2() {
   return (
     <div >
+        <h1 class="moto">My journey of exploration is still ongoing. </h1>
         
         <ol style={{ margin: 0, padding: 0, listStylePosition: "inside" }}>
                     <div style={{ padding: "20px" }}>
@@ -365,7 +366,7 @@ function Tab_2() {
 
         <div style={{ padding: "20px" }}>
             <h1><li>MLP Text Classification</li></h1>
-            <p>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.</p>
+            <p>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.
             <h4>Time cost:</h4>
             <table >
                 <tr>
@@ -390,6 +391,7 @@ function Tab_2() {
                     <td>0.907</td>
                 </tr>
             </table>
+            </p>
             <p>Train loss of 4 models:</p>
             <br/>
             

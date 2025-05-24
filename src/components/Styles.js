@@ -5,6 +5,8 @@ export const Heading = styled.h1`
 	text-align: center;
 	color:rgba(52,0,108,1);
     margin-bottom:0px;
+	font-family: cursive;
+	font-family: 'ShortBaby', sans-serif;
 `;
 
 

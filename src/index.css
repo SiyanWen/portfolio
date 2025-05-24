@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+  color: rgba(52,0,108,1);
   
 }
 
@@ -19,4 +20,30 @@ html, body, #root {
   overflow-x: hidden;
   margin:0;
   padding:0;
+}
+
+@font-face {
+  font-family: 'ShadeBlue';
+  src: url('./fonts/ShadeBlue-2OozX.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ShortBaby';
+  src: url('./fonts/ShortBaby-Mg2w.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArianaVioleta';
+  src: url('./fonts/ArianaVioleta-dz2K.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ant-tabs-tab {
+  font: "italic  bold 16px/2 cursive";
+  color: "rgba(52,0,108,1)",
 }
