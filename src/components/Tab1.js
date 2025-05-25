@@ -1,17 +1,17 @@
 import withTabBackground from './withTabBackground.js';
-
+import "./Tab3.css"
 function Tab1() {
   return (
     <div  >
       <div class="responsive" >
-        <div class="responsive">
+        <div class="container">
           <img
           src="other/graduate.jpg"
           alt="graduate"
           style={{ width: "200px", height: "279px"}}
         />
         </div>
-        <div class="responsive" >
+        <div class="container" >
           <h1>Siyan Wen</h1>
 
           <h2>Education</h2>
@@ -19,6 +19,7 @@ function Tab1() {
           <p>Master of Science in Computer Science</p>
           <h4>Central Academy of Fine Arts (China), Sep.2014 - Jun.2019</h4>
           <p>Bachelor's in architectural design</p>
+          <div>
           <a href="mailto:swen42023@gmail.com" target="_blank" rel="noopener noreferrer">
           <img src='icons/envelope.svg' alt="Email" style={{ width: '32px', margin: '10px' }} />
           </a>
@@ -30,6 +31,7 @@ function Tab1() {
           <a href="https://www.linkedin.com/in/siyan-wen-714a12337" target="_blank" rel="noopener noreferrer">
           <img src='icons/linkedin-sign.svg' alt="LinkedIn" style={{ width: '32px', margin: '10px' }} />
           </a>
+          </div>
 
         </div>
       </div>

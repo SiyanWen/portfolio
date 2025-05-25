@@ -3,10 +3,10 @@ import './Tab3.css'
 function Tab3() {
   return (
 
-    <div  >
+    <div  class="responsive">
        
         <ol style={{ margin: 0, padding: 0, listStylePosition: "inside" }}>
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Animation and Special Effect</li></h1>
                 <video width="20%"   controls>
                     <source src="./other/title_x264.mp4" type="video/mp4"/>
@@ -14,7 +14,7 @@ function Tab3() {
                 </video>
             </div>
 
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Handmade Hanfu</li></h1>
                 <div  class="container">
                 
@@ -39,7 +39,7 @@ function Tab3() {
                 />
                 </div>
             </div>
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Ball-Jointed Doll (BJD)</li></h1>
                 
                 <div class="container">
@@ -75,7 +75,7 @@ function Tab3() {
                 />
                 </div>
             </div>
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Panoramic view</li></h1>
                 
                 <a href="https://vr.justeasy.cn/view/94243f7118ffab78-1617357677.html" target="_blank" rel="noopener noreferrer">
@@ -86,7 +86,7 @@ function Tab3() {
                 <h2>Lifestyle Museum</h2>
                 </a>
             </div>
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Architecture Design</li></h1>
                 <h2>Spirited Away Theme Resort</h2>
                 <div class="container">
@@ -144,7 +144,7 @@ function Tab3() {
                 </div>
             </div>
 
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>3d Model</li></h1>
                 <div class="container">
                 
@@ -177,7 +177,7 @@ function Tab3() {
                 </div>
             </div>
 
-            <div style={{ padding: "20px" }}>
+            <div class="container">
                 <h1><li>Painting</li></h1>
                 <div class="container">
                 <img 

@@ -5,7 +5,7 @@ import "./Tab3.css"
 
 function Tab2() {
   return (
-    <div class="container">
+    <div class="responsive">
         <h1 class="moto">My journey of exploration is still ongoing. </h1>
         
         <ol style={{ margin: 0, padding: 0, listStylePosition: "inside" }}>
@@ -422,7 +422,7 @@ function Tab2() {
             </table>
             
         </div>
-        <div style={{ padding: "20px" }}>
+        <div class="container">
             <h1><li>Word2Vec</li></h1>
             <h4>I used Skip-Gram and negative sampling to trained a embedding model for the word2vec task. The result is as following.</h4>
             <h4>After training, we can use knn to get closest words to the given word:
@@ -456,9 +456,9 @@ function Tab2() {
             /></h4>
         </div>
 
-        <div style={{ padding: "20px" }}>
+        <div class="container">
             <h1><li>MLP Text Classification</li></h1>
-            <h4>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.
+            <h4>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.</h4>
             <h2>Time cost:</h2>
             <table >
                 <tr>
@@ -483,7 +483,7 @@ function Tab2() {
                     <td>0.907</td>
                 </tr>
             </table>
-            </h4>
+            
             <h2>Train loss of 4 models:</h2>
             <br/>
             

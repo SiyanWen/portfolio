@@ -11,7 +11,7 @@ const withTabBackground = (Component, backgroundImage = 'background_2.jpg') => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
-        padding: '40px',
+        // padding: '40px',
         minHeight: '100vh',
         boxSizing: 'border-box',
         overflowX: 'hidden',
