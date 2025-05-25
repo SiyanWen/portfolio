@@ -1,22 +1,24 @@
 
 import withTabBackground from './withTabBackground.js';
 import Latex from './Latex.js';
+import "./Tab3.css"
 
-function Tab_2() {
+function Tab2() {
   return (
-    <div >
+    <div class="container">
         <h1 class="moto">My journey of exploration is still ongoing. </h1>
         
         <ol style={{ margin: 0, padding: 0, listStylePosition: "inside" }}>
-                    <div style={{ padding: "20px" }}>
+            <div  class="container">
             <h1><li>Presidental election prediction project</li></h1>
-            <p>
+            <h4>
                 Work Flow:
                 <br/>
+
                 <img 
                 src="algo/presidental_1.png"
                 alt="Work flow"
-                style={{  width: "640px",height: "652px", padding: "10px" }}
+                // style={{  width: "640px",height: "652px", padding: "10px" }}
                 />
                 <br/>
                 I built a bagging (voting) model to leverage financial data, TF-IDF and Sentiment Analysis of presidental debate to predict the result of U.S. presidental election.
@@ -25,13 +27,14 @@ function Tab_2() {
                 <br/>
                 However it has several limitations:
                 <br/>
-                <ul>
-                    <li>Collecting polling data is expensive</li>
-                    <li>polling data might not reflect people's true choices</li>
-                    <li>Fake tweets</li>
-                    <li>Manipulation and bots</li>
-                    <li>Low Literacy in less developed country</li>
-                    <li>Social medias that are popular currently may not exist several years ago (Twitter was founded in 2006), and thus lack consistant long-term training data</li>
+                
+                <ul >
+                    <li style={{position:"relative", left: "-10px"}}>Collecting polling data is expensive</li>
+                    <li style={{position:"relative", left: "43px"}}>polling data might not reflect people's true choices</li>
+                    <li style={{position:"relative", left: "-86px"}}>Fake tweets</li>
+                    <li style={{position:"relative", left: "-50px"}}>Manipulation and bots</li>
+                    <li >Low Literacy in less developed country</li>
+                    <li style={{position:"relative", left: "373px"}}>Social medias that are popular currently may not exist several years ago (Twitter was founded in 2006), and thus lack consistant long-term training data</li>
                 </ul>
                 
                 But in U.S.,the audio and transcripts of the presidential election television debates that emerged since 1960 have been relatively well-preserved, and no one has yet explored the transcripts (one of the informative and strategy-rich natural language materials).
@@ -41,61 +44,150 @@ function Tab_2() {
                 <br/>
                 Final work flow:
                 <br/>
+
                 <img 
                 src="algo/presidental_5.png"
                 alt="Final work flow"
-                style={{  width: "640px",height: "759px", padding: "10px" }}
+                // style={{  width: "640px",height: "759px", padding: "10px" }}
                 />
                 <br/>
                 
                 The result is as following:
+                
+                
+                </h4>
                 <br/>
-                Confusion Matrix:
-                <br/>
-            </p>
-            
-            <div >
-                <img 
-                src="algo/presidental_2.png"
-                alt="spirited_away_theme_resort_1"
-                style={{  width: "535px",height: "455px", padding: "10px" }}
-                />
-                <br/>
-                <img 
-                src="algo/presidental_3.png"
-                alt="spirited_away_theme_resort_1"
-                style={{  width: "398px",height: "149px", padding: "10px" }}
-                />
-                <br/>
-                <p>Leave-One-Out evaluation result (without future training samples):</p>
-                <br/>
-                <img 
-                src="algo/presidental_4.png"
-                alt="spirited_away_theme_resort_1"
-                style={{  width: "270px",height: "293px", padding: "10px" }}
-                />
-                <br/>
+                <h2>Confusion Matrix:</h2>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Predicted Democratc</td>
+                        <td>Predicted Republi</td>
+                    </tr>
+                    <tr>
+                        <td>True lable Democratic</td>
+                        <td>4</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>True lable Republic</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
 
-            </div>
-            <p>Video introduction:</p>
+                </table>
+                <br/>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Precision</td>
+                        <td>Recall</td>
+                        <td>F1-score</td>
+                        <td>Support</td>
+                    </tr>
+                    <tr>
+                        <td>Democratic</td>
+                        <td>0.8</td>
+                        <td>0.8</td>
+                        <td>0.8</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Republic</td>
+                        <td>0.83</td>
+                        <td>0.83</td>
+                        <td>0.83</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                <h4>Accuracy: 0.82</h4>
+                
+                <h2>Leave-One-Out evaluation result (without future training samples):</h2>
+                <table>
+                    <tr>
+                        
+                        <td>Year</td>
+                        <td>actual</td>
+                        <td>predicted</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1984</td>
+                        <td>Republic</td>
+                        <td>Republic</td>
+                    </tr>
+                    <tr>
+                        <td>1988</td>
+                        <td>Republic</td>
+                        <td style={{color:"red"}}>Democratic</td>
+                    </tr>
+                    <tr>
+                        <td>1992</td>
+                        <td>Democratic</td>
+                        <td>Democratic</td>
+                    </tr>
+                    <tr>
+                        <td>1996</td>
+                        <td>Democratic</td>
+                        <td>Democratic</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>Republic</td>
+                        <td>Republic</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>Republic</td>
+                        <td>Republic</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Democratic</td>
+                        <td>Democratic</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Democratic</td>
+                        <td>Democratic</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Republic</td>
+                        <td>Republic</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Democratic</td>
+                        <td style={{color:"red"}}>Republic</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Republic</td>
+                        <td>Republic</td>
+                    </tr>
+                </table>
+            
+            
+            <h2>Video introduction:</h2>
             <video width="20%"   controls>
                 <source src="./algo/Project_Video_Siyan_Wen.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
             <br/>
-            <a href="https://drive.google.com/file/d/19SRLpJ7n6t5GAqOZcxSum0QkztgI_4kr/view?usp=sharing" target="_blank" rel="noopener noreferrer">My PDF Report</a>
+            <a href="https://drive.google.com/file/d/19SRLpJ7n6t5GAqOZcxSum0QkztgI_4kr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><h4>My PDF Report</h4></a>
         </div>
 
-                <div style={{ padding: "20px" }}>
+        <div class="container">
             <h1><li>Seq2seq model (machine translation)</li></h1>
-            <p>Train loss per batch:</p>
+            <h2>Train loss per batch:</h2>
             <br/>
             <img 
             src="algo/translate_2.png"
             alt="train_loss_per_batch"
-            style={{  width: "554px",height: "455px", padding: "10px" }}
+            // style={{  width: "554px",height: "455px", padding: "10px" }}
             />
-            <p>
+            <h4>
                 I trained a RNN seq2seq model with a batch size of 256, 8 epochs, learning_rate  1e-3. In both Encoder and Decoder it has an embedding layer of dimension of 128 . Then it has a GRU layer, the hidden units of GRU is 256. In Decoder, it has a dense layer of 1*vocab size. <br/>The Attention adds another 3 trainable matrix W1, W2 and V.
                 <br/>
                 The RNN+Attention model wasn't succesfully trained due to the limitation of memory of Colab.
@@ -106,26 +198,26 @@ function Tab_2() {
             <img 
             src="algo/translate_4.png"
             alt="sew2seq_model_parameters"
-            style={{  width: "554px",height: "455px", padding: "10px" }}
+            // style={{  width: "554px",height: "455px", padding: "10px" }}
             />
             <br/>
                 The model parameters are as following (without attention, without sorted sentence length):
                 <br/>
-            </p>
+            </h4>
             <img 
             src="algo/translate_3.png"
             alt="sew2seq_model_parameters"
-            style={{  width: "896px",height: "528px", padding: "10px" }}
+            // style={{  width: "896px",height: "528px", padding: "10px" }}
             />
             <br/>
-            <p>Train loss and validation loss per epoch:</p>
+            <h2>Train loss and validation loss per epoch:</h2>
             <br/>
             <img 
             src="algo/translate.png"
             alt="translate_loss"
-            style={{  width: "567px",height: "455px", padding: "10px" }}
+            // style={{  width: "567px",height: "455px", padding: "10px" }}
             />
-            <p>
+            <h4>
                 BLEU score: 7.39.
                 <br/>
                 Translation results of 10 sentences:
@@ -194,19 +286,19 @@ function Tab_2() {
                 Translation: they're also using the same time to build the animals in the same way.
                 </ol>
                 
-            </p>
+            </h4>
         </div>
 
-        <div style={{ padding: "20px" }}>
+        <div class="container">
             <h1><li>Language Modeling</li></h1>
-            <p>I used vanilla Bi-Gram, Bi-Gram with Good Turing Smoothing and Kneser Ney Smoothing to carry out a statistical Language Modeling and RNN Language Modeling.
+            <h4>I used vanilla Bi-Gram, Bi-Gram with Good Turing Smoothing and Kneser Ney Smoothing to carry out a statistical Language Modeling and RNN Language Modeling.
                 <br/>
                 Here is the smoothed Bi-Gram Count, we can see when the frequence c  becomes infinitely large, the probability of the word approaches 0 smoothly due to I used a power law model <Latex>{"\\(N_c = a \\cdot c^b\\)"}</Latex> replaced the empirical Nc when c &gt; 100.
                 <br/>
                 <img 
             src="algo/lm_good_turing.png"
             alt="good_turing"
-            style={{  width: "855px",height: "547px", padding: "10px" }}
+            // style={{  width: "855px",height: "547px", padding: "10px" }}
             />
             <br/>
             The RNN model is implemented using tensorflow, with an embedding layer of dimension of 64, a hidden layer of 128 hidden units, and a dense layer of 1*vocab size.
@@ -218,11 +310,11 @@ function Tab_2() {
             <img 
             src="algo/lm_rnn.png"
             alt="lm_rnn"
-            style={{  width: "846px",height: "547px", padding: "10px" }}
+            // style={{  width: "846px",height: "547px", padding: "10px" }}
             />
-            <br/>
-            Perplexity of each model:
-            <br/>
+
+            </h4>
+            <h2>Perplexity of each model:</h2>
             <table>
                 <tr>
                     <th>Model</th>
@@ -246,7 +338,7 @@ function Tab_2() {
                 </tr>
             </table>
             <br/>
-            Predict the next word given the previous word:
+            <h2>Predict the next word given the previous word:</h2>
             <br/>
             <table>
                 <tr>
@@ -328,12 +420,12 @@ function Tab_2() {
                     <td>of</td>
                 </tr>
             </table>
-            </p>
+            
         </div>
         <div style={{ padding: "20px" }}>
             <h1><li>Word2Vec</li></h1>
-            <p>I used Skip-Gram and negative sampling to trained a embedding model for the word2vec task. The result is as following.</p>
-            <p>After training, we can use knn to get closest words to the given word:
+            <h4>I used Skip-Gram and negative sampling to trained a embedding model for the word2vec task. The result is as following.</h4>
+            <h4>After training, we can use knn to get closest words to the given word:
                 <br/>
                 "rose" is close to ['rose', 'sevigny', 'stevens', 'fiorentino', 'alexander', 'isabella', 'airhead', 'goldblum', 'joanna', 'curry']
                 <br/>
@@ -359,15 +451,15 @@ function Tab_2() {
             <br/>
             <img 
             src="algo/center_vec.png"
-            alt="spirited_away_theme_resort_1"
-            style={{  width: "594px",height: "435px", padding: "10px" }}
-            /></p>
+            alt="Word2vec Visualization"
+            // style={{  width: "594px",height: "435px", padding: "10px" }}
+            /></h4>
         </div>
 
         <div style={{ padding: "20px" }}>
             <h1><li>MLP Text Classification</li></h1>
-            <p>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.
-            <h4>Time cost:</h4>
+            <h4>I used MLP to carry out the task of classifying the text by author with mini-batch (100 epochs), SGD (50 epochs), Tensorflow mini-batch (100 epochs) and Tensorflow SGD (100 epochs). The result is as following.
+            <h2>Time cost:</h2>
             <table >
                 <tr>
                     <th></th>
@@ -391,46 +483,46 @@ function Tab_2() {
                     <td>0.907</td>
                 </tr>
             </table>
-            </p>
-            <p>Train loss of 4 models:</p>
+            </h4>
+            <h2>Train loss of 4 models:</h2>
             <br/>
             
             <br/>
             <img 
             src="algo/skip_gram_train_loss.png"
             alt="skip_gram_train_loss"
-            style={{  width: "383px",height: "316px", padding: "10px" }}
+            // style={{  width: "383px",height: "316px", padding: "10px" }}
             />
             <br/>
-            <p>Validation Accuracy and F1:</p>
+            <h2>Validation Accuracy and F1:</h2>
             <br/>
             <img 
             src="algo/skip_gram_val.png"
             alt="skip_gram_val"
-            style={{  width: "674px",height: "316px", padding: "10px" }}
+            // style={{  width: "674px",height: "316px", padding: "10px" }}
             />
 
-            <p>Train loss of manual mini-batch and SGD models:</p>
+            <h2>Train loss of manual mini-batch and SGD models:</h2>
             <br/>
             <img 
             src="algo/manual_train_loss.png"
             alt="manual_train_loss"
-            style={{  width: "672px",height: "316px", padding: "10px" }}
+            // style={{  width: "672px",height: "316px", padding: "10px" }}
             />
             <br/>
-            <p>Train loss of Tensorflow mini-batch and SGD models:</p>
+            <h2>Train loss of Tensorflow mini-batch and SGD models:</h2>
             <img 
             src="algo/tf_train_loss.png"
             alt="tf_train_loss"
-            style={{  width: "672px",height: "316px", padding: "10px" }}
+            // style={{  width: "672px",height: "316px", padding: "10px" }}
             />
             <br/>
             
             
-            <p>
+            <h4>
                 
                 Because the manual SGD has much smaller training loss compare to valid loss, I decreased the hidden dimention to reduce model complexity and used smaller epoch number to prevent overfitting.
-            </p>
+            </h4>
         </div>
 
 
@@ -438,7 +530,8 @@ function Tab_2() {
         </ol>
         
     </div>
+    
   );
 }
 
-export default withTabBackground(Tab_2,  'background.jpg');
+export default withTabBackground(Tab2,  'background_2.jpg');

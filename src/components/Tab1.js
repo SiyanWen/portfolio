@@ -1,17 +1,17 @@
 import withTabBackground from './withTabBackground.js';
 
-function Tab_1() {
+function Tab1() {
   return (
     <div  >
-      <div style={{ padding: "100px" ,display: "flex"}}>
-        <div>
+      <div class="responsive" >
+        <div class="responsive">
           <img
           src="other/graduate.jpg"
           alt="graduate"
-          style={{ width: "200px", height: "279px",  padding: "100px" }}
+          style={{ width: "200px", height: "279px"}}
         />
         </div>
-        <div>
+        <div class="responsive" >
           <h1>Siyan Wen</h1>
 
           <h2>Education</h2>
@@ -37,4 +37,4 @@ function Tab_1() {
   );
 }
 
-export default withTabBackground(Tab_1,  'background.jpg');
+export default withTabBackground(Tab1,  'background_2.jpg');

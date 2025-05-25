@@ -1,0 +1,22 @@
+img {
+width: 45%;
+height: auto;
+padding: 10px
+}
+.container {
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media only screen and (max-width: 991px){
+ /* CSS that should be displayed if width is equal to or less than 991px goes here */
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: "10px"
+  }
+}
