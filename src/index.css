@@ -42,8 +42,3 @@ html, body, #root {
   font-weight: normal;
   font-style: normal;
 }
-
-.ant-tabs-tab {
-  font: "italic  bold 16px/2 cursive";
-  color: "rgba(52,0,108,1)",
-}

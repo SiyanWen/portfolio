@@ -13,7 +13,7 @@ const MyTabs = () => (
         children: <Tab_1  />,
       },
       {
-        label: 'Algorithms I learned',
+        label: 'Projects',
         key: '2',
         children: <Tab_2 />,
       },
