@@ -14,31 +14,7 @@ function Tab3() {
                 </video>
             </div>
 
-            <div class="container">
-                <h1><li>Handmade Hanfu</li></h1>
-                <div  class="container">
-                
-                <img 
-                src="other/IMG_0815.jpeg"
-                alt="front view"
-                // style={{ width: "302px",height: "403px", padding: "10px" }}
-                />
-                <img 
-                src="other/IMG_0816.jpeg"
-                alt="back view"
-                // style={{ width: "302px",height: "403px", padding: "10px" }}
-                />
-                <img 
-                src="other/IMG_0814.jpeg"
-                alt="hanfu_1"
-                // style={{ width: "387px",height: "403px", padding: "10px" }}
-                /><img 
-                src="other/IMG_0817.jpeg"
-                alt="back view"
-                // style={{ width: "268px",height: "403px", padding: "10px" }}
-                />
-                </div>
-            </div>
+           
             <div class="container">
                 <h1><li>Ball-Jointed Doll (BJD)</li></h1>
                 
