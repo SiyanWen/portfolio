@@ -1,4 +1,7 @@
 import withTabBackground from './withTabBackground.js';
+import { ImMail } from "react-icons/im";
+import { ImGithub } from "react-icons/im";
+import { ImLinkedin } from "react-icons/im";
 import "./Tab3.css"
 function Tab1() {
   return (
@@ -6,30 +9,55 @@ function Tab1() {
       <div class="responsive" >
         <div class="container">
           <img
-          src="other/graduate.jpg"
-          alt="graduate"
-          style={{ width: "200px", height: "279px"}}
+          src="other/profile.jpg"
+          alt="profile"
+          style={{width:'150px'}}
         />
+        <h1>Siyan Wen</h1>
         </div>
+        
         <div class="container" >
-          <h1>Siyan Wen</h1>
-
-          <h2>Education</h2>
-          <h4>Stevens Institute of Technology (U.S.), Sep.2023 - May.2025</h4>
-          <p>Master of Science in Computer Science</p>
-          <h4>Central Academy of Fine Arts (China), Sep.2014 - Jun.2019</h4>
-          <p>Bachelor's in architectural design</p>
+          
+          <h2>Project Demo</h2>
+          <h3>AI Canvas</h3>
+          <video width="20%"   controls>
+              <source src="./other/ai_canvas_sound_fast.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+          </video>
+          <h3>Talk To PDF</h3>
+          <video width="20%"   controls>
+              <source src="./other/talk_to_pdf_sound.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+          </video>
+          
           <div>
           <a href="mailto:swen42023@gmail.com" target="_blank" rel="noopener noreferrer">
-          <img src='icons/envelope.svg' alt="Email" style={{ width: '32px', margin: '10px' }} />
+            <ImMail style={{ 
+            width: '32px', 
+            height: '32px', 
+            cursor: 'pointer',
+            margin: '10px',
+            color: '#a16b5e' }}/>
+          
           </a>
 
           <a href="https://github.com/SiyanWen" target="_blank" rel="noopener noreferrer">
-          <img src='icons/github-sign.svg' alt="GitHub" style={{ width: '32px', margin: '10px' }} />
+          <ImGithub style={{ 
+            width: '32px', 
+            height: '32px', 
+            cursor: 'pointer',
+            margin: '10px',
+            color: '#a16b5e' }}/>
+          
           </a>
 
           <a href="https://www.linkedin.com/in/siyan-wen-714a12337" target="_blank" rel="noopener noreferrer">
-          <img src='icons/linkedin-sign.svg' alt="LinkedIn" style={{ width: '32px', margin: '10px' }} />
+          <ImLinkedin style={{ 
+            width: '32px', 
+            height: '32px', 
+            cursor: 'pointer',
+            margin: '10px',
+            color: '#a16b5e' }} />
           </a>
           </div>
 
@@ -39,4 +67,4 @@ function Tab1() {
   );
 }
 
-export default withTabBackground(Tab1,  'background_2.jpg');
+export default Tab1;

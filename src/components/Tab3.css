@@ -14,7 +14,7 @@ padding: 10px
 .responsive{
     padding: 100px;
     display: flex;
-    flex-direction: column;
+    
   }
 @media only screen and (max-width: 768px){
  /* CSS that should be displayed if width is equal to or less than 768px goes here */
