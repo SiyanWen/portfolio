@@ -1,4 +1,4 @@
-import withTabBackground from './withTabBackground.js';
+// import withTabBackground from './withTabBackground.js';
 import { ImMail } from "react-icons/im";
 import { ImGithub } from "react-icons/im";
 import { ImLinkedin } from "react-icons/im";

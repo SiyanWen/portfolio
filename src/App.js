@@ -1,10 +1,10 @@
 
 import './App.css';
-import MyTabs from './components/MyTabs.js';
+// import MyTabs from './components/MyTabs.js';
 import Tab1 from './components/Tab1.js';
 import { Fragment } from "react";
 import ScrollButton from "./components/ScrollButton";
-import {  Heading } from "./components/Styles";
+// import {  Heading } from "./components/Styles";
 function App() {
   return (
     <Fragment >
