@@ -7,13 +7,16 @@ function Tab1() {
   return (
     <div  >
       <div class="responsive" >
+        
         <div class="container">
+          <h1 class="bigH1">Siyan Wen</h1>
           <img
           src="other/profile.jpg"
           alt="profile"
           style={{width:'150px'}}
+          
         />
-        <h1>Siyan Wen</h1>
+        <p>Experienced in Java backend development, Microservices and kafka. </p>
         </div>
         
         <div class="container" >
