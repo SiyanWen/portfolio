@@ -22,6 +22,12 @@ function Tab1() {
         <div class="container" >
           
           <h2>Project Demo</h2>
+          <h3>Food delivery platform</h3>
+          <video width="20%"   controls>
+              <source src="./other/shop_net_demo.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+          </video>
+
           <h3>AI Canvas</h3>
           <video width="20%"   controls>
               <source src="./other/ai_canvas_sound_fast.mp4" type="video/mp4"/>
@@ -32,7 +38,6 @@ function Tab1() {
               <source src="./other/talk_to_pdf_sound.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
           </video>
-          
           <div>
           <a href="mailto:swen42023@gmail.com" target="_blank" rel="noopener noreferrer">
             <ImMail style={{ 
