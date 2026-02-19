@@ -27,17 +27,25 @@ function Tab1() {
               <source src="./other/shop_net_demo.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
           </video>
+          <br/>
+          <a href="https://github.com/SiyanWen/shop-net">Github repo</a>
 
           <h3>AI Canvas</h3>
           <video width="20%"   controls>
               <source src="./other/ai_canvas_sound_fast.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
           </video>
+          <br/>
+          <a href="https://github.com/SiyanWen/AICanvas_front">Github repo (frontend)</a>
+          <a href="https://github.com/SiyanWen/AICanvas_back">Github repo (backend)</a>
+          
           <h3>Talk To PDF</h3>
           <video width="20%"   controls>
               <source src="./other/talk_to_pdf_sound.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
           </video>
+          <br/>
+          <a href="https://github.com/SiyanWen/TalkToPDF">Github repo</a>
           <div>
           <a href="mailto:swen42023@gmail.com" target="_blank" rel="noopener noreferrer">
             <ImMail style={{ 
